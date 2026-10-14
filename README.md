@@ -1,3 +1,4 @@
+[English](README.md) | [简体中文](README.zh-CN.md)
 # SuishiBCI
 
 EEGLAB plugin to import **BDF/BDF+** recordings from modern EEG systems into EEGLAB.
