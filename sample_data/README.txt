@@ -1,4 +1,4 @@
-Sample data for demo_SuiEEG_load.m
+Sample data for demo_SuishiBCI.m
 ==================================
 
 File
@@ -24,18 +24,18 @@ Usage
 -----
   From MATLAB (with EEGLAB or the plugin on the path):
 
-    demo_SuiEEG_load
+    demo_SuishiBCI
 
   Or load directly:
 
-    EEG = pop_SuiEEG_load('demo_recording.bdf', '<path>/SuiEEG_load/sample_data');
+    EEG = pop_SuishiBCI('demo_recording.bdf', '<path>/SuishiBCI/sample_data');
 
 See also
 --------
   ../README.md          project overview and installation
-  ../demo/demo_SuiEEG_load.m
+  ../demo/demo_SuishiBCI.m
 
 Replacing this file
 -------------------
-  Keep the name demo_recording.bdf, or update demo/demo_SuiEEG_load.m
+  Keep the name demo_recording.bdf, or update demo/demo_SuishiBCI.m
   and document changes here.

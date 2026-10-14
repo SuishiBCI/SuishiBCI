@@ -1,14 +1,14 @@
-function EEG = demo_SuiEEG_load()
-% demo_SuiEEG_load - Load bundled sample BDF and print basic dataset info.
+function EEG = demo_SuishiBCI()
+% demo_SuishiBCI - Load bundled sample BDF and print basic dataset info.
 %
 % Usage:
-%   >> demo_SuiEEG_load
+%   >> demo_SuishiBCI
 %
 % Requires sample_data/demo_recording.bdf in the plugin folder.
 % Start EEGLAB first, or ensure SuiEEG_load is on the MATLAB path.
 
 sampleName = 'demo_recording.bdf';
-pluginRoot = fileparts(which('pop_SuiEEG_load'));
+pluginRoot = fileparts(which('pop_SuishiBCI'));
 if isempty(pluginRoot)
     pluginRoot = fileparts(fileparts(mfilename('fullpath')));
     addpath(pluginRoot);
@@ -16,12 +16,12 @@ end
 
 sampleFile = fullfile(pluginRoot, 'sample_data', sampleName);
 if ~isfile(sampleFile)
-    error(['demo_SuiEEG_load: sample file not found:\n  %s\n' ...
+    error(['demo_SuishiBCI: sample file not found:\n  %s\n' ...
         'Copy a BDF file to sample_data/%s and try again.'], sampleFile, sampleName);
 end
 
 fprintf('Loading sample BDF...\n  %s\n', sampleFile);
-EEG = pop_SuiEEG_load(sampleFile);
+EEG = pop_SuishiBCI(sampleFile);
 
 fprintf('\nDataset summary\n');
 fprintf('  setname : %s\n', EEG.setname);
