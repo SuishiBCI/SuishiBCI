@@ -1,5 +1,5 @@
 function [EEG, command] = pop_SuishiBCI(filename, filepath)
-% pop_SuishiBCI - Import BDF/BDF+ into EEGLAB (SuiEEG_load plugin).
+% pop_SuishiBCI - Import BDF/BDF+ recordings into EEGLAB (SuishiBCI plugin).
 %
 % Usage:
 %   >> EEG = pop_SuishiBCI;
